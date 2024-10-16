@@ -4,12 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI 花销助手 - 结果</title>
+    <style>
+        /* 保证页脚在页面底部 */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        footer {
+            margin-top: auto; /* 自动推到页面底端 */
+            text-align: left;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <h1>计算结果</h1>
     <p>总花销为：{{ total_expenses }} 元</p>
     <p>{{ calendar_message }}</p>
     <a href="/">返回输入页面</a>
+
+<footer>
+        <p><small>by WalkerZ</small></p>
+        <p><small>source code: <a target="_blank" href="https://github.com/huyanggump/walker_qwen_agent/">https://github.com/huyanggump/walker_qwen_agent/</a></small></p>
+    </footer>
 </body>
 </html>
 
